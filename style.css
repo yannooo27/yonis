@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Redressed&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Redressed&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Redressed&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Redressed&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monoton&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Redressed&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tapestry&display=swap');
+
+
+:root{
+        --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/* Font Family*/
+
+.merriweather{
+     font-family: "merriweather";
+}
+.redressed{
+     font-family: "redressed";
+}
+.playfair{
+    font-family: "playfair display";
+}
+.tapestry{
+    font-family: "tapestry";
+}
+.monoton{
+    font-family: "monoton";
+}
+
+/* souligner*/
+.souligner {
+    position: relative;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.souligner:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background-color:  #1a31f9;
+    border-radius: 2px;
+}
+ 
+
+
+
+.logo {
+    text-shadow: 0 0 25px rgba(0, 94, 255, 0.9);
+}
+
+.yonis{
+    color:  #C9A227 ;
+    text-shadow: 0 0 25px rgb(232, 189, 0);
+}
+
+
+
+
+.navbar {
+    transition: all 0.3s;
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #ffffff;
+}
+
+
+
+.nav-link:hover::after {
+    width: 70%;
+    
+
+}
+
+.nav-link:hover {
+    color: #2966b6;
+    padding: 1rem;
+    text-shadow: 0 0 25px rgba(0, 0, 255, 0.9);
+
+}
+
+/*section hero*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bleu-text {
+    color: #1a31f9;
+}
+.gold-bg {
+    color: #D4AF37;
+}
+
+
+/* boutton*/
+.btn-order{ /*pour modifier la class btn order qui se trouve dans le html*/ 
+    color: #4cf726; /*la couleur du boutton*/
+    border-color:var(--bs-steal) ;/*bordure du boutton*/
+    transition: all 0.5s;
+}
+
+
+.btn-order:hover,
+.btn-order:active{
+    color: #ffffff;
+    background-color: #b6df21;
+    padding: 0.8rem;
+}
+
+.btn-outline-info{
+    transition: all 0.5;
+}
+.btn-outline-info:hover{
+    padding: 0.8rem;
+}
+
+
+
+/* Bg Yonis*/
+
+.bg-yonis{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/equipement\ sono.jpeg) center center ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /*permet a l'image de la section hero de rester fixe , immobile*/
+    height: 100vh; /*pour gerer la hauteur ou la longueur de l'image */
+}
+
+
+
+.treatment-card {
+    transition: transform 0.3s;
+    margin-bottom: 50px;
+}
+.treatment-card:hover {
+    transform: translateY(10px);
+}
+
+
+
+/* materiel évènementiel*/
+
+ 
+
+
+
+
+
+
+/* Section principale */
+
+
+
+/* Conteneur des éléments */
+.gear-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Carte d'équipement */
+.gear-item {
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.gear-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Cercle pour l'image */
+.gear-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 25px rgba(0, 94, 255, 0.9);
+}
+
+.gear-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gear-item:hover .gear-circle img {
+    transform: scale(1.1);
+}
+
+/* Texte */
+.gear-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.gear-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gear-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gear-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    
+    .gear-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+
+/* Témoignages*/
+.testimonials-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(images/close-up-shiny-glassware-standing-dinner-plate.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px 0;
+}
+
+.testimonials-section h2 {
+    
+   
+    position: relative;
+}
+
+
+
+.testimonial-card {
+    background: rgba(172, 217, 237, 0.138);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    position: relative;
+    margin: 20px;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: #6b93ff;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+}
+
+.client-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #6b97ff;
+}
+
+.client-name {
+    font-weight: 700;
+    color: #0f0e0e;
+    margin-bottom: 5px;
+}
+
+.client-position {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Styles pour les indicateurs du carousel */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #6b90ff;
+}
+
+/* Styles pour les flèches de navigation */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #6bb3ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+}
+
+/* Animation pour le changement de slide */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .client-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .client-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #21212257 0%, #3db0ea63 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+.footer a {
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #3754d4 !important;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1a31f9;
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    border-color: #d4af37;
+}
+
+.btn-primary:hover {
+    background-color: #c19b2e;
+    border-color: #c19b2e;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #d4af37;
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .footer .col-md-4, 
+    .footer .col-md-4, 
+    .footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    .footer h5::after {
+        width: 30px;
+    }
+}
+
